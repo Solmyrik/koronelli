@@ -1938,7 +1938,7 @@ body._lock::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 10px;
+  padding: 30px 10px 30px 10px;
 }
 
 @media (max-width: 479.98px) {
@@ -1954,6 +1954,7 @@ body._lock::after {
 }
 
 .popup-gallery__image {
+  padding-bottom: 30px;
   width: 100%;
   height: 100%;
 }
@@ -1961,6 +1962,7 @@ body._lock::after {
 .popup-gallery__image img {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 
 .popup-gallery__error {
