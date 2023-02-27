@@ -12,537 +12,635 @@
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="js/slider.js"></script>
+    <script defer src="js/popup.js"></script>
     <script defer src="js/main.js"></script>
   </head>
   <body>
-    <header class="header">
-      <div class="header__burger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="header__container">
-        <a href="index.html" class="header__logo">
-          <img class="header-logo" src="img/global/logo.svg" alt="logo" />
-          <img class="header-logo-mob" src="img/global/moblogo.svg" alt="logo" />
-        </a>
-        <div class="header__menu menu">
-          <nav class="menu__body">
-            <ul class="menu__list">
-              <li class="menu__item"><a href="" class="menu__link">Номера</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Кемпинг</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Акции</a></li>
-              <li class="menu__item"><a href="" class="menu__link">галерея</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
-            </ul>
-          </nav>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="header__socials">
-          <a href="" class="header__social">
-            <img src="img/icons/telegram.svg" alt="telegram" />
+        <div class="header__container">
+          <a href="index.html" class="header__logo">
+            <img class="header-logo" src="img/global/logo.svg" alt="logo" />
+            <img class="header-logo-mob" src="img/global/moblogo.svg" alt="logo" />
           </a>
-          <a href="" class="header__social">
-            <img src="img/icons/whats.svg" alt="WhatsApp" />
-          </a>
-          <a href="" class="header__social">
-            <img src="img/icons/phone.svg" alt="phone" />
-          </a>
+          <div class="header__menu menu">
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item"><a href="#rooms" class="menu__link">Номера</a></li>
+                <li class="menu__item"><a href="#camping" class="menu__link">Кемпинг</a></li>
+                <li class="menu__item"><a href="#discounts" class="menu__link">Акции</a></li>
+                <li class="menu__item"><a href="#gallery" class="menu__link">галерея</a></li>
+                <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__socials">
+            <a href="" class="header__social">
+              <img src="img/icons/telegram.svg" alt="telegram" />
+            </a>
+            <a href="" class="header__social">
+              <img src="img/icons/whats.svg" alt="WhatsApp" />
+            </a>
+            <a href="" class="header__social">
+              <img src="img/icons/phone.svg" alt="phone" />
+            </a>
+          </div>
         </div>
-      </div>
-    </header>
-    <main class="page">
-      <section class="main">
-        <div class="main__bg ibg">
-          <img src="img/main/bg.png" alt="house" />
-        </div>
-        <div class="main__container">
-          <div class="main__content">
-            <h1 class="main__title">
-              База отдыха <br />
-              <span>«Коронелли»</span> <br />
-              в Береговом
-            </h1>
-            <div class="main__bottom">
-              <div class="main__left">
-                <p class="main__subtitle">
-                  Одна из лучших локаций, как для спокойного семейного отдыха, так и для размещения
-                  спортивных и творческих организаций
+      </header>
+      <main class="page">
+        <section class="main">
+          <div class="main__bg ibg">
+            <img src="img/main/bg.png" alt="house" />
+          </div>
+          <div class="main__container">
+            <div class="main__content">
+              <h1 class="main__title">
+                База отдыха <br />
+                <span>«Коронелли»</span> <br />
+                в Береговом
+              </h1>
+              <div class="main__bottom">
+                <div class="main__left">
+                  <p class="main__subtitle">
+                    Одна из лучших локаций, как для спокойного семейного отдыха, так и для
+                    размещения спортивных и творческих организаций
+                  </p>
+                  <a href="#" class="main__button button"><span>Забронировать</span></a>
+                </div>
+                <div class="main__yandex">
+                  <img src="img/main/yandex.svg" alt="yandex" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__mob mob-main">
+            <div class="mob-main__bg">
+              <img src="img/main/bg-mob.png" alt="house" />
+            </div>
+            <div class="mob-main__yandex">
+              <img src="img/main/yandex.svg" alt="yandex" />
+            </div>
+          </div>
+        </section>
+        <section class="why">
+          <div class="why__container">
+            <h2 class="why__title title">
+              Почему гости <br />
+              <span>выбирают нас?</span>
+            </h2>
+            <div class="why__body">
+              <div class="why__bigitem">
+                <div class="why__image">
+                  <img src="img/why/1.png" alt="beach" />
+                </div>
+                <div class="why__name">расположение</div>
+                <div class="why__text">
+                  <span>Всего 500 м</span> до лучшего песчаного пляжа России рейтинга Ростуризма
+                </div>
+              </div>
+              <div class="why__item">
+                <div class="why__name">доступность</div>
+                <div class="why__text">
+                  Мы предлагаем идеальное
+                  <span>сочетание цены и качества</span>
+                </div>
+              </div>
+              <div class="why__item">
+                <div class="why__name">гостеприимство</div>
+                <div class="why__text">
+                  <span>Наши сотрудники</span> всегда готовы прийти на помощь
+                </div>
+              </div>
+              <div class="why__bigitem">
+                <div class="why__image">
+                  <img src="img/why/2.png" alt="beach" />
+                </div>
+                <div class="why__name">Территория</div>
+                <div class="why__text">
+                  Самый просторный <span>зеленый двор</span> на территории базы отдыха
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="rooms" class="rooms">
+          <div class="rooms__container">
+            <div class="rooms__top">
+              <h2 class="rooms__title title">
+                <span>номера</span> для <br />
+                вашего отдыха
+              </h2>
+              <div class="rooms__pagination pagination">
+                <div class="pagination__item rooms-pagination-left pagination__left">
+                  <img src="img/icons/arrow-left.svg" alt="arrow" />
+                </div>
+                <div class="pagination__item rooms-pagination-right pagination__right">
+                  <img src="img/icons/arrow-right.svg" alt="arrow" />
+                </div>
+              </div>
+            </div>
+            <div class="rooms__body">
+              <div class="rooms__block swiper__container">
+                <div class="rooms__wrapper swiper-wrapper">
+                  <div class="rooms__item swiper-slide">
+                    <h3 class="rooms__name">
+                      2-комнатный <br />
+                      Комфорт
+                    </h3>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/person.svg" alt="person" />
+                      </div>
+                      <div class="rooms__value">вместительность до 4 человек</div>
+                    </div>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/wallet.svg" alt="wallet" />
+                      </div>
+                      <div class="rooms__value">от 4 000 ₽/сутки</div>
+                    </div>
+                    <div class="rooms__buttons">
+                      <a href="#" class="rooms__button button button_border"> подробнее</a>
+                      <a href="#" class="rooms__button button"><span>Забронировать</span></a>
+                    </div>
+                  </div>
+                  <div class="rooms__item swiper-slide">
+                    <h3 class="rooms__name">
+                      4-местный <br />
+                      1-й категории
+                    </h3>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/person.svg" alt="person" />
+                      </div>
+                      <div class="rooms__value">вместительность до 5 человек</div>
+                    </div>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/wallet.svg" alt="wallet" />
+                      </div>
+                      <div class="rooms__value">от 3 000 ₽/сутки</div>
+                    </div>
+                    <div class="rooms__buttons">
+                      <a href="#" class="rooms__button button button_border"> подробнее</a>
+                      <a href="#" class="rooms__button button"><span>Забронировать</span></a>
+                    </div>
+                  </div>
+                  <div class="rooms__item swiper-slide">
+                    <h3 class="rooms__name">
+                      3-местный <br />
+                      1-й категории
+                    </h3>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/person.svg" alt="person" />
+                      </div>
+                      <div class="rooms__value">вместительность до 3 человек</div>
+                    </div>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/wallet.svg" alt="wallet" />
+                      </div>
+                      <div class="rooms__value">от 2 500 ₽/сутки</div>
+                    </div>
+                    <div class="rooms__buttons">
+                      <a href="#" class="rooms__button button button_border"> подробнее</a>
+                      <a href="#" class="rooms__button button"><span>Забронировать</span></a>
+                    </div>
+                  </div>
+                  <div class="rooms__item swiper-slide">
+                    <h3 class="rooms__name">
+                      2-местный <br />
+                      1-й категории
+                    </h3>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/person.svg" alt="person" />
+                      </div>
+                      <div class="rooms__value">вместительность до 3 человек</div>
+                    </div>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/wallet.svg" alt="wallet" />
+                      </div>
+                      <div class="rooms__value">от 2 000 ₽/сутки</div>
+                    </div>
+                    <div class="rooms__buttons">
+                      <a href="#" class="rooms__button button button_border"> подробнее</a>
+                      <a href="#" class="rooms__button button"><span>Забронировать</span></a>
+                    </div>
+                  </div>
+                  <div class="rooms__item swiper-slide">
+                    <h3 class="rooms__name">
+                      2-местный <br />
+                      2-й категории
+                    </h3>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/person.svg" alt="person" />
+                      </div>
+                      <div class="rooms__value">вместительность до 2 человек</div>
+                    </div>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/wallet.svg" alt="wallet" />
+                      </div>
+                      <div class="rooms__value">от 1 500 ₽/сутки</div>
+                    </div>
+                    <div class="rooms__buttons">
+                      <a href="#" class="rooms__button button button_border"> подробнее</a>
+                      <a href="#" class="rooms__button button"><span>Забронировать</span></a>
+                    </div>
+                  </div>
+                  <div class="rooms__item swiper-slide">
+                    <h3 class="rooms__name">
+                      1-местный <br />
+                      1-й категории
+                    </h3>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/person.svg" alt="person" />
+                      </div>
+                      <div class="rooms__value">вместительность 1 человек</div>
+                    </div>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/wallet.svg" alt="wallet" />
+                      </div>
+                      <div class="rooms__value">от 1 500 ₽/сутки</div>
+                    </div>
+                    <div class="rooms__buttons">
+                      <a href="#" class="rooms__button button button_border"> подробнее</a>
+                      <a href="#" class="rooms__button button"><span>Забронировать</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="discounts" class="discounts">
+          <div class="discounts__container">
+            <h2 class="discounts__title title">акции и <span>скидки</span></h2>
+            <div class="discounts__body">
+              <div class="discounts__item">
+                <img class="discounts__pc" src="img/discounts/1.png" alt="discounts" />
+                <img class="discounts__mob" src="img/discounts/mob1.png" alt="discounts" />
+              </div>
+              <div class="discounts__item">
+                <img class="discounts__pc" src="img/discounts/2.png" alt="discounts" />
+                <img class="discounts__mob" src="img/discounts/mob2.png" alt="discounts" />
+              </div>
+              <div class="discounts__item">
+                <img class="discounts__pc" src="img/discounts/3.png" alt="discounts" />
+                <img class="discounts__mob" src="img/discounts/mob3.png" alt="discounts" />
+              </div>
+              <div class="discounts__booking">
+                <p class="discounts__text">
+                  Воспользуйтесь бонусом <br />
+                  при бронировании номера
                 </p>
-                <a href="#" class="main__button button"><span>Забронировать</span></a>
-              </div>
-              <div class="main__yandex">
-                <img src="img/main/yandex.svg" alt="yandex" />
+                <a href="" class="discounts__button button"><span>Забронировать</span></a>
               </div>
             </div>
           </div>
-        </div>
-        <div class="main__mob mob-main">
-          <div class="mob-main__bg">
-            <img src="img/main/bg-mob.png" alt="house" />
-          </div>
-          <div class="mob-main__yandex">
-            <img src="img/main/yandex.svg" alt="yandex" />
-          </div>
-        </div>
-      </section>
-      <section class="why">
-        <div class="why__container">
-          <h2 class="why__title title">
-            Почему гости <br />
-            <span>выбирают нас?</span>
-          </h2>
-          <div class="why__body">
-            <div class="why__bigitem">
-              <div class="why__image">
-                <img src="img/why/1.png" alt="beach" />
-              </div>
-              <div class="why__name">расположение</div>
-              <div class="why__text">
-                <span>Всего 500 м</span> до лучшего песчаного пляжа России рейтинга Ростуризма
-              </div>
-            </div>
-            <div class="why__item">
-              <div class="why__name">доступность</div>
-              <div class="why__text">
-                Мы предлагаем идеальное
-                <span>сочетание цены и качества</span>
-              </div>
-            </div>
-            <div class="why__item">
-              <div class="why__name">гостеприимство</div>
-              <div class="why__text">
-                <span>Наши сотрудники</span> всегда готовы прийти на помощь
-              </div>
-            </div>
-            <div class="why__bigitem">
-              <div class="why__image">
-                <img src="img/why/2.png" alt="beach" />
-              </div>
-              <div class="why__name">Территория</div>
-              <div class="why__text">
-                Самый просторный <span>зеленый двор</span> на территории базы отдыха
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="rooms">
-        <div class="rooms__container">
-          <div class="rooms__top">
-            <h2 class="rooms__title title">
-              <span>номера</span> для <br />
-              вашего отдыха
+        </section>
+        <section class="servise">
+          <div class="servise__container">
+            <h2 class="servise__title title">
+              в вашем распоряжении <br />
+              следующие <span>услуги</span>
             </h2>
-            <div class="rooms__pagination pagination">
-              <div class="pagination__item rooms-pagination-left pagination__left">
-                <img src="img/icons/arrow-left.svg" alt="arrow" />
+            <div class="servise__body">
+              <div class="servise__item">
+                <div class="servise__icon">
+                  <img src="img/servise/1.svg" alt="icon" />
+                </div>
+                <h4 class="servise__name">
+                  Беседки, мангалы, <br />
+                  костровая зона
+                </h4>
               </div>
-              <div class="pagination__item rooms-pagination-right pagination__right">
-                <img src="img/icons/arrow-right.svg" alt="arrow" />
+              <div class="servise__item">
+                <div class="servise__icon">
+                  <img src="img/servise/2.svg" alt="icon" />
+                </div>
+                <h4 class="servise__name">
+                  Питание <br />
+                  в столовой
+                </h4>
               </div>
-            </div>
-          </div>
-          <div class="rooms__body">
-            <div class="rooms__block swiper__container">
-              <div class="rooms__wrapper swiper-wrapper">
-                <div class="rooms__item swiper-slide">
-                  <h3 class="rooms__name">
-                    2-комнатный <br />
-                    Комфорт
-                  </h3>
-                  <div class="rooms__advantages">
-                    <div class="rooms__icon">
-                      <img src="img/icons/person.svg" alt="person" />
-                    </div>
-                    <div class="rooms__value">вместительность до 4 человек</div>
-                  </div>
-                  <div class="rooms__advantages">
-                    <div class="rooms__icon">
-                      <img src="img/icons/wallet.svg" alt="wallet" />
-                    </div>
-                    <div class="rooms__value">от 4 000 ₽/сутки</div>
-                  </div>
-                  <div class="rooms__buttons">
-                    <a href="#" class="rooms__button button button_border"> подробнее</a>
-                    <a href="#" class="rooms__button button"><span>Забронировать</span></a>
-                  </div>
+              <div class="servise__item">
+                <div class="servise__icon">
+                  <img src="img/servise/3.svg" alt="icon" />
                 </div>
-                <div class="rooms__item swiper-slide">
-                  <h3 class="rooms__name">
-                    4-местный <br />
-                    1-й категории
-                  </h3>
-                  <div class="rooms__advantages">
-                    <div class="rooms__icon">
-                      <img src="img/icons/person.svg" alt="person" />
-                    </div>
-                    <div class="rooms__value">вместительность до 5 человек</div>
-                  </div>
-                  <div class="rooms__advantages">
-                    <div class="rooms__icon">
-                      <img src="img/icons/wallet.svg" alt="wallet" />
-                    </div>
-                    <div class="rooms__value">от 3 000 ₽/сутки</div>
-                  </div>
-                  <div class="rooms__buttons">
-                    <a href="#" class="rooms__button button button_border"> подробнее</a>
-                    <a href="#" class="rooms__button button"><span>Забронировать</span></a>
-                  </div>
+                <h4 class="servise__name">
+                  Волейбольная и <br />
+                  детская площадки
+                </h4>
+              </div>
+              <div class="servise__item">
+                <div class="servise__icon">
+                  <img src="img/servise/4.svg" alt="icon" />
                 </div>
-                <div class="rooms__item swiper-slide">
-                  <h3 class="rooms__name">
-                    3-местный <br />
-                    1-й категории
-                  </h3>
-                  <div class="rooms__advantages">
-                    <div class="rooms__icon">
-                      <img src="img/icons/person.svg" alt="person" />
-                    </div>
-                    <div class="rooms__value">вместительность до 3 человек</div>
-                  </div>
-                  <div class="rooms__advantages">
-                    <div class="rooms__icon">
-                      <img src="img/icons/wallet.svg" alt="wallet" />
-                    </div>
-                    <div class="rooms__value">от 2 500 ₽/сутки</div>
-                  </div>
-                  <div class="rooms__buttons">
-                    <a href="#" class="rooms__button button button_border"> подробнее</a>
-                    <a href="#" class="rooms__button button"><span>Забронировать</span></a>
-                  </div>
+                <h4 class="servise__name">
+                  Поле для <br />
+                  мини-футбола
+                </h4>
+              </div>
+              <div class="servise__item">
+                <div class="servise__icon">
+                  <img src="img/servise/5.svg" alt="icon" />
                 </div>
-                <div class="rooms__item swiper-slide">
-                  <h3 class="rooms__name">
-                    2-местный <br />
-                    1-й категории
-                  </h3>
-                  <div class="rooms__advantages">
-                    <div class="rooms__icon">
-                      <img src="img/icons/person.svg" alt="person" />
-                    </div>
-                    <div class="rooms__value">вместительность до 3 человек</div>
-                  </div>
-                  <div class="rooms__advantages">
-                    <div class="rooms__icon">
-                      <img src="img/icons/wallet.svg" alt="wallet" />
-                    </div>
-                    <div class="rooms__value">от 2 000 ₽/сутки</div>
-                  </div>
-                  <div class="rooms__buttons">
-                    <a href="#" class="rooms__button button button_border"> подробнее</a>
-                    <a href="#" class="rooms__button button"><span>Забронировать</span></a>
-                  </div>
+                <h4 class="servise__name">
+                  Настольный <br />
+                  теннис
+                </h4>
+              </div>
+              <div class="servise__item">
+                <div class="servise__icon">
+                  <img src="img/servise/6.svg" alt="icon" />
                 </div>
-                <div class="rooms__item swiper-slide">
-                  <h3 class="rooms__name">
-                    2-местный <br />
-                    2-й категории
-                  </h3>
-                  <div class="rooms__advantages">
-                    <div class="rooms__icon">
-                      <img src="img/icons/person.svg" alt="person" />
-                    </div>
-                    <div class="rooms__value">вместительность до 2 человек</div>
-                  </div>
-                  <div class="rooms__advantages">
-                    <div class="rooms__icon">
-                      <img src="img/icons/wallet.svg" alt="wallet" />
-                    </div>
-                    <div class="rooms__value">от 1 500 ₽/сутки</div>
-                  </div>
-                  <div class="rooms__buttons">
-                    <a href="#" class="rooms__button button button_border"> подробнее</a>
-                    <a href="#" class="rooms__button button"><span>Забронировать</span></a>
-                  </div>
+                <h4 class="servise__name">Настольные игры</h4>
+              </div>
+              <div class="servise__item">
+                <div class="servise__icon">
+                  <img src="img/servise/7.svg" alt="icon" />
                 </div>
-                <div class="rooms__item swiper-slide">
-                  <h3 class="rooms__name">
-                    1-местный <br />
-                    1-й категории
-                  </h3>
-                  <div class="rooms__advantages">
-                    <div class="rooms__icon">
-                      <img src="img/icons/person.svg" alt="person" />
-                    </div>
-                    <div class="rooms__value">вместительность 1 человек</div>
-                  </div>
-                  <div class="rooms__advantages">
-                    <div class="rooms__icon">
-                      <img src="img/icons/wallet.svg" alt="wallet" />
-                    </div>
-                    <div class="rooms__value">от 1 500 ₽/сутки</div>
-                  </div>
-                  <div class="rooms__buttons">
-                    <a href="#" class="rooms__button button button_border"> подробнее</a>
-                    <a href="#" class="rooms__button button"><span>Забронировать</span></a>
-                  </div>
+                <h4 class="servise__name">
+                  Wi-fi зоны на <br />
+                  всей территории
+                </h4>
+              </div>
+              <div class="servise__item">
+                <div class="servise__icon">
+                  <img src="img/servise/8.svg" alt="icon" />
                 </div>
+                <h4 class="servise__name">Бильярд</h4>
+              </div>
+              <div class="servise__item">
+                <div class="servise__icon">
+                  <img src="img/servise/9.svg" alt="icon" />
+                </div>
+                <h4 class="servise__name">
+                  Пчелотерапия <br />
+                  (сон на ульях)
+                </h4>
+              </div>
+              <div class="servise__item">
+                <div class="servise__icon">
+                  <img src="img/servise/10.svg" alt="icon" />
+                </div>
+                <h4 class="servise__name">
+                  Автостоянка <br />
+                  и кемпинг
+                </h4>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="discounts">
-        <div class="discounts__container">
-          <h2 class="discounts__title title">акции и <span>скидки</span></h2>
-          <div class="discounts__body">
-            <div class="discounts__item">
-              <img class="discounts__pc" src="img/discounts/1.png" alt="discounts" />
-              <img class="discounts__mob" src="img/discounts/mob1.png" alt="discounts" />
-            </div>
-            <div class="discounts__item">
-              <img class="discounts__pc" src="img/discounts/2.png" alt="discounts" />
-              <img class="discounts__mob" src="img/discounts/mob2.png" alt="discounts" />
-            </div>
-            <div class="discounts__item">
-              <img class="discounts__pc" src="img/discounts/3.png" alt="discounts" />
-              <img class="discounts__mob" src="img/discounts/mob3.png" alt="discounts" />
-            </div>
-            <div class="discounts__booking">
-              <p class="discounts__text">
-                Воспользуйтесь бонусом <br />
-                при бронировании номера
+        </section>
+        <section id="camping" class="camping">
+          <div class="camping__container">
+            <div class="camping__left">
+              <h2 class="camping__title title">
+                Наш автокемпинг <br />
+                <span>один из лучших</span> <br />
+                в крыму
+              </h2>
+              <p class="camping__text">
+                Один из немногих кемпингов, созданный походниками для собратьев по духу. Комфорт
+                территории, внутренней и внешней инфраструктуры, умеренная цена - всё это выгодно
+                отличает наш кемпинг среди других по Крыму
               </p>
-              <a href="" class="discounts__button button"><span>Забронировать</span></a>
+              <a href="#" class="camping__button button button_border"><span>подробнее</span></a>
+            </div>
+            <div class="camping__right">
+              <img src="img/capming/1.png" alt="camping" />
+            </div>
+          </div>
+          <div class="camping__mob">
+            <img src="img/capming/2.png" alt="camping" />
+          </div>
+        </section>
+        <section id="gallery" class="gallery">
+          <div class="gallery__container">
+            <div class="gallery__top">
+              <h2 class="gallery__title title">фотогалерея</h2>
+              <div class="gallery__pagination pagination">
+                <div class="pagination__item gallery-pagination-left pagination__left">
+                  <img src="img/icons/arrow-left.svg" alt="arrow" />
+                </div>
+                <div class="pagination__item gallery-pagination-right pagination__right">
+                  <img src="img/icons/arrow-right.svg" alt="arrow" />
+                </div>
+              </div>
+            </div>
+            <div class="gallery__block swiper__container">
+              <div class="gallery__wrapper swiper-wrapper">
+                <div class="gallery__item swiper-slide">
+                  <a href="#popik" class="gallery__card popup-link">
+                    <img src="img/gallery/1.png" alt="gallery" />
+                  </a>
+                  <a href="#popik" class="gallery__card popup-link">
+                    <img src="img/gallery/2.png" alt="gallery" />
+                  </a>
+                  <a href="#popik" class="gallery__card popup-link">
+                    <img src="img/gallery/3.png" alt="gallery" />
+                  </a>
+                  <a href="#popik" class="gallery__card popup-link">
+                    <img src="img/gallery/4.png" alt="gallery" />
+                  </a>
+                  <a href="#popik" class="gallery__card popup-link">
+                    <img src="img/gallery/5.png" alt="gallery" />
+                  </a>
+                  <a href="#popik" class="gallery__card popup-link">
+                    <img src="img/gallery/6.png" alt="gallery" />
+                  </a>
+                </div>
+                <div class="gallery__item swiper-slide">
+                  <a href="#popik" class="gallery__card popup-link">
+                    <img src="img/gallery/7.png" alt="gallery" />
+                  </a>
+                  <a href="#popik" class="gallery__card popup-link">
+                    <img src="img/gallery/8.png" alt="gallery" />
+                  </a>
+                  <a href="#popik" class="gallery__card popup-link">
+                    <img src="img/gallery/9.png" alt="gallery" />
+                  </a>
+                  <a href="#popik" class="gallery__card popup-link">
+                    <img src="img/gallery/10.png" alt="gallery" />
+                  </a>
+                  <a href="#popik" class="gallery__card popup-link">
+                    <img src="img/gallery/11.png" alt="gallery" />
+                  </a>
+                  <a href="#popik" class="gallery__card popup-link">
+                    <img src="img/gallery/12.png" alt="gallery" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contacts" class="contacts">
+          <div class="contacts__container">
+            <h2 class="contacts__title title">как с нами <span>связаться</span></h2>
+            <div class="contacts__body">
+              <div class="contacts__left">
+                <div class="map-section" id="map"></div>
+              </div>
+              <div class="contacts__right">
+                <div class="contacts__items">
+                  <div class="contacts__item">
+                    <div class="contacts__name">Адрес</div>
+                    <div class="contacts__value">
+                      298179, Республика Крым, г. Феодосия, с. Береговое, ул.Коронелли, 8
+                    </div>
+                  </div>
+                  <div class="contacts__item">
+                    <div class="contacts__name">Контакты</div>
+                    <a href="tel:+79785560556" class="contacts__link">
+                      <div class="contacts__icon">
+                        <img src="img/contacts/phone.svg" alt="phone" />
+                      </div>
+                      <div class="contacts__text">+7 978 556 05 56</div>
+                    </a>
+                    <a href="mailto:koronellifeo@mail.ru" class="contacts__link">
+                      <div class="contacts__icon">
+                        <img src="img/contacts/email.svg" alt="email" />
+                      </div>
+                      <div class="contacts__text">koronellifeo@mail.ru</div>
+                    </a>
+                    <div class="contacts__socials">
+                      <a class="contacts__social">
+                        <img src="img/contacts/telegram.svg" alt="telegram" />
+                      </a>
+                      <a class="contacts__social">
+                        <img src="img/contacts/what.svg" alt="WhatsApp" />
+                      </a>
+                      <a class="contacts__social">
+                        <img src="img/contacts/vk.svg" alt="vk" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="contacts__btns">
+                    <a href="" class="contacts__button contacts__button_first button button_border">
+                      <span>как добраться</span>
+                    </a>
+                    <a href="" class="contacts__button button button_border">
+                      <span>построить маршрут</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="fake"></section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__body">
+            <div class="footer__top">
+              <div class="footer__column">
+                <div class="footer__item">
+                  <div class="footer__name">телефон</div>
+                  <a href="tel:+79785560556" class="footer__value">+7 978 556 05 56</a>
+                </div>
+                <div class="footer__item">
+                  <div class="footer__name">Отдел бронирования</div>
+                  <a href="mailto:booking@koronelli.ru" class="footer__value"
+                    >booking@koronelli.ru</a
+                  >
+                </div>
+                <div class="footer__item">
+                  <div class="footer__name">Для фин. предложений</div>
+                  <a href="mailto:koronelli8@mail.ru" class="footer__value">koronelli8@mail.ru</a>
+                </div>
+              </div>
+              <div class="footer__column">
+                <nav class="footer__menu">
+                  <ul class="footer__list">
+                    <li class="footer__link"><a href="#" class="footer__item-menu">Номера</a></li>
+                    <li class="footer__link"><a href="#" class="footer__item-menu">кемпинг</a></li>
+                    <li class="footer__link"><a href="#" class="footer__item-menu">услуги</a></li>
+                    <li class="footer__link"><a href="#" class="footer__item-menu">акции</a></li>
+                  </ul>
+                  <ul class="footer__list">
+                    <li class="footer__link">
+                      <a href="#" class="footer__item-menu">Как добраться</a>
+                    </li>
+                    <li class="footer__link">
+                      <a href="#" class="footer__item-menu">правила проживания</a>
+                    </li>
+                    <li class="footer__link">
+                      <a href="#" class="footer__item-menu">карта курорта</a>
+                    </li>
+                    <li class="footer__link">
+                      <a href="#" class="footer__item-menu">полезные советы</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer__column">
+                <div class="footer__item">
+                  <div class="footer__name">адрес</div>
+                  <div class="footer__value footer__adres">
+                    298179, Республика Крым, г. Феодосия, с. Береговое, ул.Коронелли, 8
+                  </div>
+                </div>
+              </div>
+              <div class="footer__column">
+                <a href="#" class="footer__button button"><span>Забронировать</span> </a>
+              </div>
+              <div class="footer__column footer__socials">
+                <a href="" class="footer__social">
+                  <img src="img/footer/tg.svg" alt="telegram" />
+                </a>
+                <a href="" class="footer__social">
+                  <img src="img/footer/whatsapp.svg" alt="whatsapp" />
+                </a>
+                <a href="" class="footer__social">
+                  <img src="img/footer/vk.svg" alt="vk" />
+                </a>
+              </div>
+              <div class="footer__column footer__yandex">
+                <img src="img/footer/yandex.png" alt="yandex" />
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="servise">
-        <div class="servise__container">
-          <h2 class="servise__title title">
-            в вашем распоряжении <br />
-            следующие <span>услуги</span>
-          </h2>
-          <div class="servise__body">
-            <div class="servise__item">
-              <div class="servise__icon">
-                <img src="img/servise/1.svg" alt="icon" />
-              </div>
-              <h4 class="servise__name">
-                Беседки, мангалы, <br />
-                костровая зона
-              </h4>
-            </div>
-            <div class="servise__item">
-              <div class="servise__icon">
-                <img src="img/servise/2.svg" alt="icon" />
-              </div>
-              <h4 class="servise__name">
-                Питание <br />
-                в столовой
-              </h4>
-            </div>
-            <div class="servise__item">
-              <div class="servise__icon">
-                <img src="img/servise/3.svg" alt="icon" />
-              </div>
-              <h4 class="servise__name">
-                Волейбольная и <br />
-                детская площадки
-              </h4>
-            </div>
-            <div class="servise__item">
-              <div class="servise__icon">
-                <img src="img/servise/4.svg" alt="icon" />
-              </div>
-              <h4 class="servise__name">
-                Поле для <br />
-                мини-футбола
-              </h4>
-            </div>
-            <div class="servise__item">
-              <div class="servise__icon">
-                <img src="img/servise/5.svg" alt="icon" />
-              </div>
-              <h4 class="servise__name">
-                Настольный <br />
-                теннис
-              </h4>
-            </div>
-            <div class="servise__item">
-              <div class="servise__icon">
-                <img src="img/servise/6.svg" alt="icon" />
-              </div>
-              <h4 class="servise__name">Настольные игры</h4>
-            </div>
-            <div class="servise__item">
-              <div class="servise__icon">
-                <img src="img/servise/7.svg" alt="icon" />
-              </div>
-              <h4 class="servise__name">
-                Wi-fi зоны на <br />
-                всей территории
-              </h4>
-            </div>
-            <div class="servise__item">
-              <div class="servise__icon">
-                <img src="img/servise/8.svg" alt="icon" />
-              </div>
-              <h4 class="servise__name">Бильярд</h4>
-            </div>
-            <div class="servise__item">
-              <div class="servise__icon">
-                <img src="img/servise/9.svg" alt="icon" />
-              </div>
-              <h4 class="servise__name">
-                Пчелотерапия <br />
-                (сон на ульях)
-              </h4>
-            </div>
-            <div class="servise__item">
-              <div class="servise__icon">
-                <img src="img/servise/10.svg" alt="icon" />
-              </div>
-              <h4 class="servise__name">
-                Автостоянка <br />
-                и кемпинг
-              </h4>
-            </div>
+        <div class="footer__line"></div>
+        <div class="footer__container">
+          <div class="footer__bottom">
+            <div class="footer__copy">© База отдыха «Коронелли»</div>
+            <a href="" class="footer__policy">политика конфиденциальности</a>
           </div>
+          <div class="footer__years">2010-2023</div>
         </div>
-      </section>
-      <section class="camping">
-        <div class="camping__container">
-          <div class="camping__left">
-            <h2 class="camping__title title">
-              Наш автокемпинг <br />
-              <span>один из лучших</span> <br />
-              в крыму
-            </h2>
-            <p class="camping__text">
-              Один из немногих кемпингов, созданный походниками для собратьев по духу. Комфорт
-              территории, внутренней и внешней инфраструктуры, умеренная цена - всё это выгодно
-              отличает наш кемпинг среди других по Крыму
-            </p>
-            <a href="#" class="camping__button button button_border"><span>подробнее</span></a>
+      </footer>
+    </div>
+
+    <div id="popik" class="popup">
+      <div class="popup__body">
+        <div class="popup__content popup-gallery">
+          <div class="popup-gallery__close close-popup">
+            <img src="img/icons/close.svg" alt="close" />
           </div>
-          <div class="camping__right">
-            <img src="img/capming/1.png" alt="camping" />
-          </div>
-        </div>
-        <div class="camping__mob">
-          <img src="img/capming/2.png" alt="camping" />
-        </div>
-      </section>
-      <section class="gallery">
-        <div class="gallery__container">
-          <div class="gallery__top">
-            <h2 class="gallery__title title">фотогалерея</h2>
-            <div class="gallery__pagination pagination">
-              <div class="pagination__item gallery-pagination-left pagination__left">
-                <img src="img/icons/arrow-left.svg" alt="arrow" />
-              </div>
-              <div class="pagination__item gallery-pagination-right pagination__right">
-                <img src="img/icons/arrow-right.svg" alt="arrow" />
-              </div>
-            </div>
-          </div>
-          <div class="gallery__block swiper__container">
-            <div class="gallery__wrapper swiper-wrapper">
-              <div class="gallery__item swiper-slide">
-                <div class="gallery__card">
-                  <img src="img/gallery/1.png" alt="gallery" />
-                </div>
-                <div class="gallery__card">
-                  <img src="img/gallery/2.png" alt="gallery" />
-                </div>
-                <div class="gallery__card">
-                  <img src="img/gallery/3.png" alt="gallery" />
-                </div>
-                <div class="gallery__card">
-                  <img src="img/gallery/4.png" alt="gallery" />
-                </div>
-                <div class="gallery__card">
-                  <img src="img/gallery/5.png" alt="gallery" />
-                </div>
-                <div class="gallery__card">
-                  <img src="img/gallery/6.png" alt="gallery" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__body">
-          <div class="footer__top">
-            <div class="footer__column">
-              <div class="footer__item">
-                <div class="footer__name">телефон</div>
-                <a href="tel:+79785560556" class="footer__value">+7 978 556 05 56</a>
-              </div>
-              <div class="footer__item">
-                <div class="footer__name">Отдел бронирования</div>
-                <a href="mailto:booking@koronelli.ru" class="footer__value">booking@koronelli.ru</a>
-              </div>
-              <div class="footer__item">
-                <div class="footer__name">Для фин. предложений</div>
-                <a href="mailto:koronelli8@mail.ru" class="footer__value">koronelli8@mail.ru</a>
-              </div>
-            </div>
-            <div class="footer__column">
-              <nav class="footer__menu">
-                <ul class="footer__list">
-                  <li class="footer__link"><a href="#" class="footer__item-menu">Номера</a></li>
-                  <li class="footer__link"><a href="#" class="footer__item-menu">кемпинг</a></li>
-                  <li class="footer__link"><a href="#" class="footer__item-menu">услуги</a></li>
-                  <li class="footer__link"><a href="#" class="footer__item-menu">акции</a></li>
-                </ul>
-                <ul class="footer__list">
-                  <li class="footer__link">
-                    <a href="#" class="footer__item-menu">Как добраться</a>
-                  </li>
-                  <li class="footer__link">
-                    <a href="#" class="footer__item-menu">правила проживания</a>
-                  </li>
-                  <li class="footer__link">
-                    <a href="#" class="footer__item-menu">карта курорта</a>
-                  </li>
-                  <li class="footer__link">
-                    <a href="#" class="footer__item-menu">полезные советы</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer__column">
-              <div class="footer__item">
-                <div class="footer__name">адрес</div>
-                <div class="footer__value footer__adres">
-                  298179, Республика Крым, г. Феодосия, с. Береговое, ул.Коронелли, 8
-                </div>
-              </div>
-            </div>
-            <div class="footer__column">
-              <a href="#" class="footer__button button"><span>Забронировать</span> </a>
-            </div>
-            <div class="footer__column footer__socials">
-              <a href="" class="footer__social">
-                <img src="img/footer/tg.svg" alt="telegram" />
-              </a>
-              <a href="" class="footer__social">
-                <img src="img/footer/whatsapp.svg" alt="whatsapp" />
-              </a>
-              <a href="" class="footer__social">
-                <img src="img/footer/vk.svg" alt="vk" />
-              </a>
-            </div>
-            <div class="footer__column footer__yandex">
-              <img src="img/footer/yandex.png" alt="yandex" />
-            </div>
+          <div class="popup-gallery__image">
+            <img src="img/gallery/1.png" alt="gallery" />
           </div>
         </div>
       </div>
-      <div class="footer__line"></div>
-      <div class="footer__container">
-        <div class="footer__bottom">
-          <div class="footer__copy">© База отдыха «Коронелли»</div>
-          <a href="" class="footer__policy">политика конфиденциальности</a>
-        </div>
-        <div class="footer__years">2010-2023</div>
-      </div>
-    </footer>
+    </div>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=1d78f38b-7c7e-4d74-8531-c414704d6626&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
