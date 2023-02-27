@@ -1,0 +1,75 @@
+.camping {
+  @include section-padding;
+  background-color: $light;
+  &__container {
+    display: flex;
+    gap: 70px;
+    @media (max-width: $tablet) {
+      gap: 30px;
+    }
+    @media (max-width: $mobile) {
+      display: block;
+    }
+  }
+
+  &__left {
+    flex: 0 1 50%;
+  }
+
+  &__title {
+    font-size: 45px;
+    margin-bottom: 30px;
+    line-height: 131%;
+    @media (max-width: $tablet) {
+      font-size: 30px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 25px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 150%;
+    color: $gray;
+    margin-bottom: 60px;
+    @media (max-width: $tablet) {
+      font-size: 15px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 14px;
+    }
+  }
+
+  &__button {
+  }
+
+  &__right {
+    flex: 0 1 50%;
+    @media (max-width: $mobile) {
+      display: none;
+    }
+    img {
+      width: 100%;
+      max-height: 580px;
+      @media (max-width: $tablet) {
+        height: 430px;
+      }
+    }
+  }
+  &__mob {
+    display: none;
+    @media (max-width: $mobileSmall) {
+      display: block;
+      margin-top: 50px;
+    }
+    img {
+      width: 100%;
+      height: 320px;
+    }
+  }
+}
+.title {
+}
+.button {
+}

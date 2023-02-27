@@ -1,0 +1,95 @@
+.rooms {
+  @include section-padding;
+  &__container {
+  }
+
+  &__top {
+    @include title-bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  &__title {
+    @media (max-width: $mobile) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__body {
+  }
+
+  &__block {
+    margin: 0 auto;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    min-width: 0;
+  }
+
+  &__item {
+    padding: 40px 30px;
+    background-color: $light;
+    border-radius: 20px;
+    flex: 0 0 calc(33.333% - 30px);
+    @media (max-width: 1190px) {
+      flex: 0 0 calc(50% - 15px);
+    }
+    @media (max-width: $mobile) {
+      flex: 0 0 100%;
+    }
+  }
+
+  &__name {
+    font-size: 30px;
+    line-height: 130%;
+    color: $blue;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    @media (max-width: $mobile) {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__advantages {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+    width: 20px;
+    //  height: 18px;
+  }
+
+  &__value {
+    font-size: 15px;
+    line-height: 131%;
+    color: $gray;
+  }
+
+  &__buttons {
+    margin-top: 60px;
+    .button_border {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__button {
+  }
+}
+.swiper__container {
+  padding: 0px 0px;
+}

@@ -1,0 +1,62 @@
+.servise {
+  @include section-padding;
+  &__container {
+  }
+
+  &__title {
+    @include title-bottom;
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    @media (max-width: $pc) {
+      gap: 30px;
+    }
+  }
+
+  &__item {
+    flex: 0 1 calc(20% - 32px);
+    padding: 50px 5px 30px 30px;
+    border: 1px solid #589aff;
+    border-radius: 20px;
+    &:nth-child(10) {
+      @media (max-width: $tablet) {
+        display: none;
+      }
+      @media (max-width: $mobile) {
+        display: block;
+      }
+    }
+    @media (max-width: $pc) {
+      flex: 0 1 calc(25% - 23px);
+    }
+    @media (max-width: $tablet) {
+      flex: 0 1 calc(33% - 18px);
+    }
+    @media (max-width: $mobile) {
+      flex: 0 1 calc(50% - 15px);
+      padding: 25px 5px 25px 25px;
+    }
+  }
+  &__icon {
+    margin-bottom: 20px;
+    @media (max-width: $mobile) {
+      width: 30px;
+      height: 30px;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  &__name {
+    font-size: 16px;
+    line-height: 150%;
+    color: $gray;
+    @media (max-width: $mobile) {
+      font-size: 12px;
+    }
+  }
+}
