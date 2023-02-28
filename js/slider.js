@@ -12,6 +12,7 @@ new Swiper('.rooms__block', {
     },
   },
   spaceBetween: 30,
+  loop: true,
   navigation: {
     nextEl: '.rooms-pagination-right',
     prevEl: '.rooms-pagination-left',
@@ -19,6 +20,7 @@ new Swiper('.rooms__block', {
 });
 
 new Swiper('.gallery__block', {
+  loop: true,
   slidesPerView: 1,
   // breakpoints: {
   //   320: {
