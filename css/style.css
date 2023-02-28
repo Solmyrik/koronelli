@@ -1227,6 +1227,7 @@ body._lock::after {
   width: 100%;
   height: 130px;
   border-radius: 20px;
+  max-width: 300px;
 }
 
 .why__name {
@@ -1531,7 +1532,7 @@ body._lock::after {
 
 @media (max-width: 991.98px) {
   .discounts__item img {
-    height: 360px;
+    height: 100%;
   }
 }
 
@@ -1860,6 +1861,22 @@ body._lock::after {
   }
 }
 
+@media (max-width: 991.98px) {
+  .camping__img-pc {
+    display: none;
+  }
+}
+
+.camping__img-tablet {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .camping__img-tablet {
+    display: block;
+  }
+}
+
 .gallery {
   padding-top: 150px;
   padding-bottom: 150px;
@@ -1913,6 +1930,7 @@ body._lock::after {
   margin: 0 auto;
   min-width: 0;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .gallery__wrapper {
@@ -1921,6 +1939,7 @@ body._lock::after {
   display: flex;
   width: 100%;
   min-width: 0;
+  border-radius: 20px;
 }
 
 .gallery__item {
@@ -1985,7 +2004,7 @@ body._lock::after {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #273750b4;
   top: 0;
   left: 0;
   opacity: 0;
@@ -2037,9 +2056,16 @@ body._lock::after {
 }
 
 .popup-gallery__image img {
-  width: 100%;
-  height: 100%;
+  width: 1140px;
+  height: 775px;
   border-radius: 20px;
+}
+
+@media (max-width: 1170px) {
+  .popup-gallery__image img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .popup-gallery__error {
