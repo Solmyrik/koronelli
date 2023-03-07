@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Страница номера</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="js/slider.js"></script>
+    <script defer src="js/popup.js"></script>
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header-room">
+        <div class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="header__container">
+          <a href="index.html" class="header__logo">
+            <img class="header-logo" src="img/global/logo.svg" alt="logo" />
+            <img class="header-logo-mob" src="img/global/moblogo.svg" alt="logo" />
+          </a>
+          <div class="header__menu menu">
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="index.html#rooms" class="menu__link">Номера</a>
+                </li>
+                <li class="menu__item">
+                  <a href="index.html#camping" class="menu__link">Кемпинг</a>
+                </li>
+                <li class="menu__item">
+                  <a href="index.html#discounts" class="menu__link">Акции</a>
+                </li>
+                <li class="menu__item">
+                  <a href="index.html#gallery" class="menu__link">галерея</a>
+                </li>
+                <li class="menu__item">
+                  <a href="index.html#contacts" class="menu__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__socials">
+            <a href="" class="header__social">
+              <img src="img/contacts/telegram.svg" alt="telegram" />
+            </a>
+            <a href="" class="header__social">
+              <img src="img/contacts/what.svg" alt="WhatsApp" />
+            </a>
+            <a href="" class="header__social">
+              <img src="img/contacts/phone.svg" alt="phone" />
+            </a>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <section class="apartment">
+          <div class="apartment__container">
+            <div class="apartament__breadgrumbs breadgrumbs">
+              <a href="index.html" class="breadgrumbs__link">Главная</a>
+              <div class="breadgrumbs__line">/</div>
+              <a href="room.html" class="breadgrumbs__link">2-комнатный Комфорт</a>
+            </div>
+            <div class="apartment__body">
+              <div class="apartment__left">
+                <a href="#popik" class="apartment__big popup-link">
+                  <img src="img/apartament/1.webp" alt="room" />
+                </a>
+                <div class="apartment__smalls">
+                  <a href="#popik" class="apartment__small popup-link">
+                    <img src="img/apartament/2.webp" alt="room" />
+                  </a>
+                  <a href="#popik" class="apartment__small popup-link">
+                    <img src="img/apartament/3.webp" alt="room" />
+                  </a>
+                  <a href="#popik" class="apartment__small popup-link">
+                    <img src="img/apartament/4.webp" alt="room" />
+                  </a>
+                </div>
+              </div>
+              <div class="apartment__right">
+                <h2 class="apartment__title">2-комнатный Комфорт</h2>
+                <div class="apartment__price">
+                  <div class="apartment__wallet">
+                    <img src="img/icons/wallet-blue.svg" alt="wallet" />
+                    <span>от 4 000 ₽/сутки</span>
+                  </div>
+                </div>
+                <div class="apartment__paragraphs">
+                  <p class="apartment__paragraph">Расположен в 3-этажном корпусе.</p>
+                  <p class="apartment__paragraph">
+                    Номер с двуспальной кроватью в одной комнате и дополнительными местами в виде
+                    двуспального раскладного дивана в гостиной.
+                  </p>
+                  <p class="apartment__paragraph">
+                    Подходит для семьи или компании друзей. Для маленьких детей предоставляется
+                    детская кроватка.
+                  </p>
+                </div>
+                <a href="" class="apartment__button button"><span>Забронировать</span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="price">
+          <div class="price__container">
+            <h2 class="price__title mintitle"><span>стоимость </span>проживания</h2>
+            <div class="price__content">
+              <table class="price__table">
+                <tr class="price__row">
+                  <th class="price__head price__head_1">Тип размещения</th>
+                  <th class="price__head">25.05 – 09.06</th>
+                  <th class="price__head">10.06 – 30.06</th>
+                  <th class="price__head">01.07 – 31.08</th>
+                  <th class="price__head price__head_5">01.09 – 16.09</th>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__body price__body_1">
+                    2-комнатный Комфорт <br />( 2 осн. + 2 доп.)
+                  </td>
+                  <td class="price__body">4 000</td>
+                  <td class="price__body">4 500</td>
+                  <td class="price__body">5 000</td>
+                  <td class="price__body">4 500</td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__body price__body_1">Доп. место взрослый</td>
+                  <td class="price__body">400</td>
+                  <td class="price__body">4500</td>
+                  <td class="price__body">5500</td>
+                  <td class="price__body">450</td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__body price__body_1">
+                    Дети до 2 лет (включительно) <br />
+                    без места
+                  </td>
+                  <td class="price__body price__body_big" colspan="4">Бесплатно</td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__body price__body_1">Дети до 6 лет (включительно)</td>
+                  <td class="price__body price__body_big" colspan="4">
+                    Скидка 30% на основные и доп. места
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__body price__body_1 price__body_2">
+                    Дети 7-13 лет (включительно)
+                  </td>
+                  <td class="price__body price__body_3 price__body_big" colspan="4">
+                    Скидка 15% на основные и доп. места
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="price__note">*Стоимость номера указана без питания, рублей в сутки</div>
+          </div>
+        </section>
+        <section class="list">
+          <div class="list__container">
+            <div class="list__column _column-list">
+              <h3 class="list__title _title-list">Комплектация номера:</h3>
+              <div class="list__content _content-list">
+                <div class="list__item _item-list">
+                  вместительность до 4 человек (2 основных + 2 доп.места)
+                </div>
+                <div class="list__item _item-list">двуспальная кровать в спальне</div>
+                <div class="list__item _item-list">двуспальный раскладной диван в гостиной</div>
+                <div class="list__item _item-list">шкаф</div>
+                <div class="list__item _item-list">
+                  кухонный уголок (холодильник, микроволновая печь, электрочайник, электроплита)
+                </div>
+                <div class="list__item _item-list">телевизор</div>
+                <div class="list__item _item-list">кондиционер</div>
+                <div class="list__item _item-list">
+                  душ, фен, туалет, туалетные принадлежности (бумага, мыло)
+                </div>
+                <div class="list__item _item-list">москитные сетки на окне</div>
+                <div class="list__item _item-list">
+                  постельное бельё, полотенца (уборка номера производится ежедневно, замена
+                  полотенец и постельного белья – раз в 5-7 дней)
+                </div>
+              </div>
+            </div>
+            <div class="list__column _column-list">
+              <h3 class="list__title _title-list">В стоимость номера входит:</h3>
+              <div class="list__content _content-list">
+                <div class="list__item _item-list">беседки, мангалы, костровая зона</div>
+                <div class="list__item _item-list">
+                  детская и волейбольная площадки, поле для мини-футбола
+                </div>
+                <div class="list__item _item-list">
+                  настольные игры (шашки, шахматы, домино, нарды)
+                </div>
+                <div class="list__item _item-list">настольный теннис</div>
+                <div class="list__item _item-list">прокат мячей и ракеток</div>
+                <div class="list__item _item-list">wifi-зоны на территории</div>
+                <div class="list__item _item-list">автостоянка на территории</div>
+              </div>
+            </div>
+            <div class="list__column _column-list">
+              <h3 class="list__title _title-list">Дополнительные услуги:</h3>
+              <div class="list__content _content-list">
+                <div class="list__item _item-list">бильярд - 300 ₽</div>
+                <div class="list__item _item-list">стирка белья - 300 ₽</div>
+                <div class="list__item _item-list">пчелотерапия (сон на ульях) - 300 ₽</div>
+                <div class="list__item _item-list">питание в столовой (оплачивается отдельно)</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="food">
+          <div class="food__container">
+            <div class="food__body">
+              <div class="food__left">
+                <h2 class="food__title mintitle"><span>Питание</span> в столовой по-домашнему</h2>
+                <div class="food__text">
+                  <p>
+                    Для гостей организовано трёхразовое комплексное питание в столовой на
+                    территории.
+                  </p>
+                  <p>
+                    Для гостей организовано трёхразовое комплексное питание в столовой на
+                    территории. Доступные планы питания:
+                    <span
+                      >полный пансиони полупансион (на выбор: завтрак + ужин, завтрак + обед или
+                      обед + ужин).</span
+                    >
+                    По просьбам наших дорогих отдыхающих, желающих не быть привязанными к столовой,
+                    мы увеличили продолжительность завтрака до 3 часов, а обеда и ужина – до 2
+                    часов.
+                  </p>
+                </div>
+              </div>
+              <div class="food__right">
+                <img src="img/apartament/food.webp" alt="food" />
+              </div>
+            </div>
+          </div>
+          <div class="food__mob">
+            <img src="img/apartament/foodmob.png" alt="food" />
+          </div>
+          <div class="food__cost cost">
+            <div class="cost__column">
+              <h4 class="cost__title">Стоимость полного пансиона</h4>
+              <div class="cost__items">
+                <div class="cost__item">
+                  <div class="cost__name">Взрослый</div>
+                  <div class="cost__value">1 155 ₽</div>
+                </div>
+                <div class="cost__item">
+                  <div class="cost__name">Детский 7-13 лет</div>
+                  <div class="cost__value">981 ₽</div>
+                </div>
+                <div class="cost__item">
+                  <div class="cost__name">Детский 0-6 лет</div>
+                  <div class="cost__value">810 ₽</div>
+                </div>
+              </div>
+            </div>
+            <div class="cost__column">
+              <h4 class="cost__title">Стоимость полупансиона</h4>
+              <div class="cost__items">
+                <div class="cost__item">
+                  <div class="cost__name">Взрослый</div>
+                  <div class="cost__value">770 ₽</div>
+                </div>
+                <div class="cost__item">
+                  <div class="cost__name">Детский 7-13 лет</div>
+                  <div class="cost__value">654 ₽</div>
+                </div>
+                <div class="cost__item">
+                  <div class="cost__name">Детский 0-6 лет</div>
+                  <div class="cost__value">540 ₽</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="rooms" class="rooms">
+          <div class="rooms__container">
+            <div class="rooms__top">
+              <h2 class="rooms__title mintitle">Другие номера</h2>
+              <div class="rooms__pagination pagination">
+                <div class="pagination__item rooms-pagination-left pagination__left">
+                  <img src="img/icons/arrow-left.svg" alt="arrow" />
+                </div>
+                <div class="pagination__item rooms-pagination-right pagination__right">
+                  <img src="img/icons/arrow-right.svg" alt="arrow" />
+                </div>
+              </div>
+            </div>
+            <div class="rooms__body">
+              <div class="rooms__block swiper__container">
+                <div class="rooms__wrapper swiper-wrapper">
+                  <div class="rooms__item swiper-slide">
+                    <h3 class="rooms__name">
+                      4-местный <br />
+                      1-й категории
+                    </h3>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/person.svg" alt="person" />
+                      </div>
+                      <div class="rooms__value">вместительность до 5 человек</div>
+                    </div>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/wallet.svg" alt="wallet" />
+                      </div>
+                      <div class="rooms__value">от 3 000 ₽/сутки</div>
+                    </div>
+                    <div class="rooms__buttons">
+                      <a href="#" class="rooms__button button button_border"> подробнее</a>
+                      <a href="#" class="rooms__button button"><span>Забронировать</span></a>
+                    </div>
+                  </div>
+                  <div class="rooms__item swiper-slide">
+                    <h3 class="rooms__name">
+                      3-местный <br />
+                      1-й категории
+                    </h3>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/person.svg" alt="person" />
+                      </div>
+                      <div class="rooms__value">вместительность до 3 человек</div>
+                    </div>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/wallet.svg" alt="wallet" />
+                      </div>
+                      <div class="rooms__value">от 2 500 ₽/сутки</div>
+                    </div>
+                    <div class="rooms__buttons">
+                      <a href="#" class="rooms__button button button_border"> подробнее</a>
+                      <a href="#" class="rooms__button button"><span>Забронировать</span></a>
+                    </div>
+                  </div>
+                  <div class="rooms__item swiper-slide">
+                    <h3 class="rooms__name">
+                      2-местный <br />
+                      1-й категории
+                    </h3>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/person.svg" alt="person" />
+                      </div>
+                      <div class="rooms__value">вместительность до 3 человек</div>
+                    </div>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/wallet.svg" alt="wallet" />
+                      </div>
+                      <div class="rooms__value">от 2 000 ₽/сутки</div>
+                    </div>
+                    <div class="rooms__buttons">
+                      <a href="#" class="rooms__button button button_border"> подробнее</a>
+                      <a href="#" class="rooms__button button"><span>Забронировать</span></a>
+                    </div>
+                  </div>
+                  <div class="rooms__item swiper-slide">
+                    <h3 class="rooms__name">
+                      2-местный <br />
+                      2-й категории
+                    </h3>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/person.svg" alt="person" />
+                      </div>
+                      <div class="rooms__value">вместительность до 2 человек</div>
+                    </div>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/wallet.svg" alt="wallet" />
+                      </div>
+                      <div class="rooms__value">от 1 500 ₽/сутки</div>
+                    </div>
+                    <div class="rooms__buttons">
+                      <a href="#" class="rooms__button button button_border"> подробнее</a>
+                      <a href="#" class="rooms__button button"><span>Забронировать</span></a>
+                    </div>
+                  </div>
+                  <div class="rooms__item swiper-slide">
+                    <h3 class="rooms__name">
+                      1-местный <br />
+                      1-й категории
+                    </h3>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/person.svg" alt="person" />
+                      </div>
+                      <div class="rooms__value">вместительность 1 человек</div>
+                    </div>
+                    <div class="rooms__advantages">
+                      <div class="rooms__icon">
+                        <img src="img/icons/wallet.svg" alt="wallet" />
+                      </div>
+                      <div class="rooms__value">от 1 500 ₽/сутки</div>
+                    </div>
+                    <div class="rooms__buttons">
+                      <a href="#" class="rooms__button button button_border"> подробнее</a>
+                      <a href="#" class="rooms__button button"><span>Забронировать</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__body">
+            <div class="footer__top">
+              <div class="footer__column">
+                <div class="footer__item">
+                  <div class="footer__name">телефон</div>
+                  <a href="tel:+79785560556" class="footer__value">+7 978 556 05 56</a>
+                </div>
+                <div class="footer__item">
+                  <div class="footer__name">Отдел бронирования</div>
+                  <a href="mailto:booking@koronelli.ru" class="footer__value"
+                    >booking@koronelli.ru</a
+                  >
+                </div>
+                <div class="footer__item">
+                  <div class="footer__name">Для фин. предложений</div>
+                  <a href="mailto:koronelli8@mail.ru" class="footer__value">koronelli8@mail.ru</a>
+                </div>
+              </div>
+              <div class="footer__column">
+                <nav class="footer__menu">
+                  <ul class="footer__list">
+                    <li class="footer__link"><a href="#" class="footer__item-menu">Номера</a></li>
+                    <li class="footer__link"><a href="#" class="footer__item-menu">кемпинг</a></li>
+                    <li class="footer__link"><a href="#" class="footer__item-menu">услуги</a></li>
+                    <li class="footer__link"><a href="#" class="footer__item-menu">акции</a></li>
+                  </ul>
+                  <ul class="footer__list">
+                    <li class="footer__link">
+                      <a href="#" class="footer__item-menu">Как добраться</a>
+                    </li>
+                    <li class="footer__link">
+                      <a href="#" class="footer__item-menu">правила проживания</a>
+                    </li>
+                    <li class="footer__link">
+                      <a href="#" class="footer__item-menu">карта курорта</a>
+                    </li>
+                    <li class="footer__link">
+                      <a href="#" class="footer__item-menu">полезные советы</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer__column">
+                <div class="footer__item">
+                  <div class="footer__name">адрес</div>
+                  <div class="footer__value footer__adres">
+                    298179, Республика Крым, г. Феодосия, с. Береговое, ул.Коронелли, 8
+                  </div>
+                </div>
+              </div>
+              <div class="footer__column">
+                <a href="#" class="footer__button button"><span>Забронировать</span> </a>
+              </div>
+              <div class="footer__column footer__socials">
+                <a href="" class="footer__social">
+                  <img src="img/footer/tg.svg" alt="telegram" />
+                </a>
+                <a href="" class="footer__social">
+                  <img src="img/footer/whatsapp.svg" alt="whatsapp" />
+                </a>
+                <a href="" class="footer__social">
+                  <img src="img/footer/vk.svg" alt="vk" />
+                </a>
+              </div>
+              <div class="footer__column footer__yandex">
+                <img src="img/footer/yandex.png" alt="yandex" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__line"></div>
+        <div class="footer__container">
+          <div class="footer__bottom">
+            <div class="footer__copy">© База отдыха «Коронелли»</div>
+            <a href="" class="footer__policy">политика конфиденциальности</a>
+          </div>
+          <div class="footer__years">2010-2023</div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="popik" class="popup">
+      <div class="popup__body">
+        <div class="popup__content popup-gallery">
+          <div class="popup-gallery__close close-popup">
+            <img src="img/icons/close.svg" alt="close" />
+          </div>
+          <div class="popup-gallery__image">
+            <img src="img/gallery/1.webp" alt="gallery" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

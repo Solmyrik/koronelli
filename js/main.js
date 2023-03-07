@@ -53,37 +53,39 @@ const galleryContainer = document.querySelector('.gallery__wrapper');
 const transferGalleryItem = document.querySelectorAll('.gallery__card');
 const fake = document.querySelector('.fake');
 
-window.addEventListener('resize', galleryWidth);
-function galleryWidth() {
-  const width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-  if (width <= 767) {
-    for (let i = 0; i < transferGalleryItem.length; i++) {
-      galleryContainer.appendChild(transferGalleryItem[i]);
-      transferGalleryItem[i].classList.add('swiper-slide');
-      transferGalleryItem[0].classList.add('swiper-slide-active');
-    }
-    for (let i = 0; i < galleryContent.length; i++) {
-      fake.appendChild(galleryContent[i]);
-    }
-
-    console.log('small');
-  } else {
-    if (transferGalleryItem[0].classList.contains('swiper-slide')) {
-      for (let i = 0; i < galleryContent.length; i++) {
-        galleryContainer.appendChild(galleryContent[i]);
-      }
+if (galleryContainer) {
+  window.addEventListener('resize', galleryWidth);
+  function galleryWidth() {
+    const width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    if (width <= 767) {
       for (let i = 0; i < transferGalleryItem.length; i++) {
-        console.log('ok');
-        if (i < 6) {
-          galleryContent[0].appendChild(transferGalleryItem[i]);
-        } else {
-          galleryContent[1].appendChild(transferGalleryItem[i]);
-        }
+        galleryContainer.appendChild(transferGalleryItem[i]);
+        transferGalleryItem[i].classList.add('swiper-slide');
+        transferGalleryItem[0].classList.add('swiper-slide-active');
+      }
+      for (let i = 0; i < galleryContent.length; i++) {
+        fake.appendChild(galleryContent[i]);
+      }
 
-        transferGalleryItem[i].classList.remove('swiper-slide');
+      console.log('small');
+    } else {
+      if (transferGalleryItem[0].classList.contains('swiper-slide')) {
+        for (let i = 0; i < galleryContent.length; i++) {
+          galleryContainer.appendChild(galleryContent[i]);
+        }
+        for (let i = 0; i < transferGalleryItem.length; i++) {
+          console.log('ok');
+          if (i < 6) {
+            galleryContent[0].appendChild(transferGalleryItem[i]);
+          } else {
+            galleryContent[1].appendChild(transferGalleryItem[i]);
+          }
+
+          transferGalleryItem[i].classList.remove('swiper-slide');
+        }
       }
     }
   }
+  defineWidth();
+  galleryWidth();
 }
-defineWidth();
-galleryWidth();

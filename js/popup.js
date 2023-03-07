@@ -2,7 +2,6 @@ const populLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll('.lock-padding');
 
-// const headerWrap = document.querySelector('.header__wrapper');
 const popupImage = document.querySelector('.popup-gallery__image img');
 
 let unlock = true;
@@ -14,7 +13,10 @@ if (populLinks.length > 0) {
     const popupLink = populLinks[index];
     popupLink.addEventListener('click', function (e) {
       let currentImage = e.currentTarget.children[0];
-      popupImage.src = currentImage.src;
+      let currentIndex = currentImage.src.lastIndexOf('.');
+      popupImage.src = `${currentImage.src.slice(0, currentIndex)}p${currentImage.src.slice(
+        currentIndex,
+      )}`;
       const popupName = popupLink.getAttribute('href').replace('#', '');
       const curentPopup = document.getElementById(popupName);
       popupOpen(curentPopup);

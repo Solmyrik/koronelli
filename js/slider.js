@@ -22,18 +22,6 @@ new Swiper('.rooms__block', {
 new Swiper('.gallery__block', {
   loop: true,
   slidesPerView: 1,
-  // breakpoints: {
-  //   320: {
-  //     slidesPerView: 1,
-  //   },
-  //   760: {
-  //     slidesPerView: 2,
-  //   },
-  //   1190: {
-  //     slidesPerView: 3,
-  //   },
-  // },
-  // spaceBetween: 10,
   navigation: {
     nextEl: '.gallery-pagination-right',
     prevEl: '.gallery-pagination-left',
