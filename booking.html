@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Страница бронирования</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header-room">
+        <div class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="header__container">
+          <a href="index.html" class="header__logo">
+            <img class="header-logo" src="img/global/logo.svg" alt="logo" />
+            <img class="header-logo-mob" src="img/global/moblogo.svg" alt="logo" />
+          </a>
+          <div class="header__menu menu">
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="index.html#rooms" class="menu__link">Номера</a>
+                </li>
+                <li class="menu__item">
+                  <a href="index.html#camping" class="menu__link">Кемпинг</a>
+                </li>
+                <li class="menu__item">
+                  <a href="index.html#discounts" class="menu__link">Акции</a>
+                </li>
+                <li class="menu__item">
+                  <a href="index.html#gallery" class="menu__link">галерея</a>
+                </li>
+                <li class="menu__item">
+                  <a href="index.html#contacts" class="menu__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__socials">
+            <a href="" class="header__social">
+              <img src="img/contacts/telegram.svg" alt="telegram" />
+            </a>
+            <a href="" class="header__social">
+              <img src="img/contacts/what.svg" alt="WhatsApp" />
+            </a>
+            <a href="" class="header__social">
+              <img src="img/contacts/phone.svg" alt="phone" />
+            </a>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <section class="booking">
+          <div class="booking__container">
+            <div class="apartament__breadgrumbs breadgrumbs">
+              <a href="index.html" class="breadgrumbs__link">Главная</a>
+              <div class="breadgrumbs__line">/</div>
+              <a href="camping.html" class="breadgrumbs__link">забронировать</a>
+            </div>
+            <h2 class="booking__title mintitle">
+              <span>шаг 1.</span> Онлайн-расчет и <br />
+              бронирование
+            </h2>
+            <div class="booking__body">
+              <h4 class="booking__heading">Пожалуйста, заполните ваши данные</h4>
+              <form action="" class="booking__form form">
+                <div class="form__body">
+                  <div class="form__label">
+                    <p class="form__name">1. Выберите категорию номера</p>
+                    <div class="select">
+                      <select class="form__select" name="" id="">
+                        <option value="2-комнатный Комфорт">2-комнатный Комфорт</option>
+                        <option value="4-местный 1-й категории">4-местный 1-й категории</option>
+                        <option value="3-местный 1-й категории">3-местный 1-й категории</option>
+                        <option value="2-местный 1-й категории">2-местный 1-й категории</option>
+                        <option value="2-местный 2-й категории">2-местный 2-й категории</option>
+                        <option value="1-местный 1-й категории">1-местный 1-й категории</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form__label">
+                    <p class="form__name">2. Выберите дату заезда</p>
+                    <div class="date">
+                      <input
+                        class="form__date"
+                        placeholder="Дата заезда"
+                        onchange="this.className=(this.value!=''?'has-value':'')"
+                        type="date"
+                        name=""
+                        id=""
+                      />
+                    </div>
+                  </div>
+                  <div class="form__label">
+                    <p class="form__name">3. Выберите дату выезда</p>
+                    <div class="date">
+                      <input
+                        class="form__date"
+                        placeholder="Дата выезда"
+                        onchange="this.className=(this.value!=''?'has-value':'')"
+                        type="date"
+                        name=""
+                        id=""
+                      />
+                    </div>
+                  </div>
+                  <div class="form__label">
+                    <p class="form__name">4. Выберите количество взрослых</p>
+                    <div class="select">
+                      <select class="form__select" name="" id="">
+                        <option value="0">Нет</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form__label">
+                    <p class="form__name">
+                      5. Дети до 2-х лет включительно <span>(бесплатно, без места)</span>
+                    </p>
+                    <div class="select">
+                      <select class="form__select" name="" id="">
+                        <option value="0">Нет</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form__label">
+                    <p class="form__name">
+                      6. Дети до 6-ти лет включительно <span>(скидка 30%)</span>
+                    </p>
+                    <div class="select">
+                      <select class="form__select" name="" id="">
+                        <option value="0">Нет</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form__label">
+                    <p class="form__name">
+                      7. Дети 7-13 лет включительно <span> (скидка 15%)</span>
+                    </p>
+                    <div class="select">
+                      <select class="form__select" name="" id="">
+                        <option value="0">Нет</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form__label">
+                    <p class="form__name">8. Комплексное питание</p>
+                    <div class="form__inputs">
+                      <label class="_label-wallet">
+                        <input class="_checkbox-wallet" type="checkbox" name="" id="" />
+                        <span class="_fake-wallet"></span>
+                        <span class="_wallet-chectex">завтрак</span>
+                      </label>
+                      <label class="_label-wallet">
+                        <input class="_checkbox-wallet" type="checkbox" name="" id="" />
+                        <span class="_fake-wallet"></span>
+                        <span class="_wallet-chectex">обед</span>
+                      </label>
+                      <label class="_label-wallet">
+                        <input class="_checkbox-wallet" type="checkbox" name="" id="" />
+                        <span class="_fake-wallet"></span>
+                        <span class="_wallet-chectex">ужин</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form__label">
+                    <p class="form__name">9. Комплексное питание</p>
+                    <div class="form__inputtext">
+                      <input type="text" placeholder="Введите свой e-mail" />
+                    </div>
+                  </div>
+                </div>
+                <div class="form__buttons">
+                  <div class="form__label form__label_button">
+                    <button class="form__button button button_form button_border">
+                      <span>вернуться назад</span>
+                    </button>
+                  </div>
+                  <div class="form__label form__label_button">
+                    <button class="form__button button button_form"><span>далее</span></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__body">
+            <div class="footer__top">
+              <div class="footer__column">
+                <div class="footer__item">
+                  <div class="footer__name">телефон</div>
+                  <a href="tel:+79785560556" class="footer__value">+7 978 556 05 56</a>
+                </div>
+                <div class="footer__item">
+                  <div class="footer__name">Отдел бронирования</div>
+                  <a href="mailto:booking@koronelli.ru" class="footer__value"
+                    >booking@koronelli.ru</a
+                  >
+                </div>
+                <div class="footer__item">
+                  <div class="footer__name">Для фин. предложений</div>
+                  <a href="mailto:koronelli8@mail.ru" class="footer__value">koronelli8@mail.ru</a>
+                </div>
+              </div>
+              <div class="footer__column">
+                <nav class="footer__menu">
+                  <ul class="footer__list">
+                    <li class="footer__link"><a href="#" class="footer__item-menu">Номера</a></li>
+                    <li class="footer__link"><a href="#" class="footer__item-menu">кемпинг</a></li>
+                    <li class="footer__link"><a href="#" class="footer__item-menu">услуги</a></li>
+                    <li class="footer__link"><a href="#" class="footer__item-menu">акции</a></li>
+                  </ul>
+                  <ul class="footer__list">
+                    <li class="footer__link">
+                      <a href="#" class="footer__item-menu">Как добраться</a>
+                    </li>
+                    <li class="footer__link">
+                      <a href="#" class="footer__item-menu">правила проживания</a>
+                    </li>
+                    <li class="footer__link">
+                      <a href="#" class="footer__item-menu">карта курорта</a>
+                    </li>
+                    <li class="footer__link">
+                      <a href="#" class="footer__item-menu">полезные советы</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer__column">
+                <div class="footer__item">
+                  <div class="footer__name">адрес</div>
+                  <div class="footer__value footer__adres">
+                    298179, Республика Крым, г. Феодосия, с. Береговое, ул.Коронелли, 8
+                  </div>
+                </div>
+              </div>
+              <div class="footer__column">
+                <a href="#" class="footer__button button"><span>Забронировать</span> </a>
+              </div>
+              <div class="footer__column footer__socials">
+                <a href="" class="footer__social">
+                  <img src="img/footer/tg.svg" alt="telegram" />
+                </a>
+                <a href="" class="footer__social">
+                  <img src="img/footer/whatsapp.svg" alt="whatsapp" />
+                </a>
+                <a href="" class="footer__social">
+                  <img src="img/footer/vk.svg" alt="vk" />
+                </a>
+              </div>
+              <div class="footer__column footer__yandex">
+                <img src="img/footer/yandex.png" alt="yandex" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__line"></div>
+        <div class="footer__container">
+          <div class="footer__bottom">
+            <div class="footer__copy">© База отдыха «Коронелли»</div>
+            <a href="" class="footer__policy">политика конфиденциальности</a>
+          </div>
+          <div class="footer__years">2010-2023</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
