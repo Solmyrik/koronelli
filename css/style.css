@@ -57,6 +57,17 @@
   }
 }
 
+.button_form {
+  width: 250px;
+  height: 70px;
+}
+
+@media (max-width: 767.98px) {
+  .button_form {
+    width: 100%;
+  }
+}
+
 .button::before {
   content: '';
   width: 100%;
@@ -406,6 +417,57 @@
     -ms-grid-rows: auto;
         grid-template-rows: auto;
   }
+}
+
+._label-wallet {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+._checkbox-wallet {
+  display: none;
+}
+
+._fake-wallet {
+  display: inline-block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20px;
+          flex: 0 0 20px;
+  height: 20px;
+  background-color: inherit;
+  position: relative;
+  border: 1px solid #589aff;
+  margin-right: 10px;
+}
+
+._fake-wallet::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #589aff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+._checkbox-wallet:checked + ._fake-wallet::before {
+  opacity: 1;
+}
+
+._wallet-chectext {
+  margin-left: 7px;
+  font-size: 14px;
 }
 
 * {
@@ -3236,5 +3298,355 @@ main {
 @media (max-width: 767.98px) {
   .howtoget__text {
     font-size: 14px;
+  }
+}
+
+.booking {
+  padding-top: 160px;
+  padding-bottom: 150px;
+}
+
+@media (max-width: 767.98px) {
+  .booking {
+    padding-bottom: 100px;
+  }
+}
+
+.booking__breadgrumbs {
+  margin-bottom: 70px;
+}
+
+@media (max-width: 767.98px) {
+  .booking__breadgrumbs {
+    margin-bottom: 40px;
+  }
+}
+
+.booking__title {
+  margin-bottom: 70px;
+}
+
+@media (max-width: 767.98px) {
+  .booking__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+.booking__body {
+  padding: 70px;
+  background-color: #f5f9ff;
+  border-radius: 20px;
+}
+
+@media (max-width: 767.98px) {
+  .booking__body {
+    padding: 30px 15px;
+  }
+}
+
+.booking__heading {
+  font-size: 30px;
+  line-height: 131%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767.98px) {
+  .booking__heading {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.form__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media (max-width: 991.98px) {
+  .form__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.form__buttons {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 991.98px) {
+  .form__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.form__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 390px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+}
+
+@media (max-width: 767.98px) {
+  .form__inputs {
+    width: 100%;
+  }
+}
+
+.form__label {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 calc(50% - 30px);
+          flex: 0 1 calc(50% - 30px);
+}
+
+.form__label_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.form__name {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 130%;
+}
+
+.form__name span {
+  font-size: 14px;
+}
+
+@media (max-width: 767.98px) {
+  .form__name {
+    font-size: 14px;
+  }
+}
+
+.form__select {
+  cursor: pointer;
+  width: 390px;
+  height: 70px;
+  border: 1px solid #589aff;
+  border-radius: 10px;
+  background-color: inherit;
+  font-size: 15px;
+  color: #575757;
+  padding-left: 28px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  position: relative;
+}
+
+.form__select::-ms-expand {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .form__select {
+    width: 100%;
+  }
+}
+
+.form__date {
+  cursor: pointer;
+  width: 390px;
+  height: 70px;
+  border: 1px solid #589aff;
+  border-radius: 10px;
+  background-color: inherit;
+  font-size: 15px;
+  color: #575757;
+  padding-left: 28px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  position: relative;
+}
+
+.form__date::-ms-expand {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .form__date {
+    width: 100%;
+  }
+}
+
+.form__inputtext input {
+  width: 390px;
+  height: 70px;
+  border: 1px solid #589aff;
+  border-radius: 10px;
+  background-color: inherit;
+  font-size: 15px;
+  color: #575757;
+  padding-left: 28px;
+}
+
+@media (max-width: 767.98px) {
+  .form__inputtext input {
+    width: 100%;
+  }
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  position: relative;
+  width: 390px;
+  height: 70px;
+}
+
+.select::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  width: 14px;
+  height: 14px;
+  border-top: 3px solid #589aff;
+  border-right: 3px solid #589aff;
+  margin-right: 14px;
+  -webkit-transform: rotate(135deg) translate(-50%);
+          transform: rotate(135deg) translate(-50%);
+}
+
+@media (max-width: 767.98px) {
+  .select {
+    width: 100%;
+  }
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+input[type='date'] {
+  position: relative;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+}
+
+input[type='date']::-webkit-inner-spin-button,
+input[type='date']::-webkit-clear-button {
+  z-index: -10;
+}
+
+input[type='date']::-webkit-input-placeholder {
+  z-index: 99;
+}
+
+input[type='date']:placeholder {
+  z-index: 99;
+}
+
+input[type='date']:not(.has-value):before {
+  content: attr(placeholder);
+  width: 100%;
+}
+
+input[type='date']:not(:valid):before {
+  content: attr(placeholder);
+  width: 100%;
+}
+
+.has-value {
+  cursor: pointer;
+  width: 390px;
+  height: 70px;
+  border: 1px solid #589aff;
+  border-radius: 10px;
+  background-color: inherit;
+  font-size: 15px;
+  color: #575757;
+  padding-left: 28px;
+}
+
+@media (max-width: 767.98px) {
+  .has-value {
+    width: 100%;
+  }
+}
+
+.date {
+  width: 390px;
+  height: 70px;
+  position: relative;
+}
+
+.date::before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/icons/calendar.svg");
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  right: 30px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767.98px) {
+  .date {
+    width: 100%;
+  }
+}
+
+input[type='date'] {
+  cursor: pointer;
+  width: 390px;
+  height: 70px;
+  border: 1px solid #589aff;
+  border-radius: 10px;
+  background-color: inherit;
+  font-size: 15px;
+  color: #575757;
+  padding-left: 28px;
+}
+
+@media (max-width: 767.98px) {
+  input[type='date'] {
+    width: 100%;
   }
 }
